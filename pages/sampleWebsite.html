@@ -1,0 +1,73 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  .sideBarLeftItem{
+        background: skyblue;
+        order: 1;
+    }
+
+    .sideBarRightItem{
+        background: yellow;
+        order: 2;
+    }
+
+    .sideBarItem{
+        flex: 1 0 0;
+        border: 0px solid green;
+    }
+</style>
+<body>
+  <header class="headerContainer">Header</header>
+  <div id="main">
+        <article>
+            <h1>Life</h1>
+            <p>
+                A large part of handling life is deciding to look at it through a positive lens.
+                People who have mastered their mindsets can explain to us just how we see things from the right perspective.
+            </p>
+        </article>
+        <sidebar class="sideBarItem sideBarLeftItem">
+            <h1>Left Sidebar</h1>
+        </sidebar>
+        <sidebar class="sideBarItem sideBarRightItem">
+            <h1>Right Sidebar</h1>
+        </sidebar>
+  </div>
+  <footer class="footerContainer">Footer</footer>
+</body>
