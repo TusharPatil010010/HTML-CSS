@@ -1,4 +1,3 @@
-<script>
 const salary = document.querySelector('#salary');
 const output = document.querySelector('.salary-output');
 output.textContent = Salary.value;
@@ -16,4 +15,14 @@ text.addEventListener('input',function(){
         textError.textContent = "Name is incorrect";
     }
 }); 
-</script>
+
+const phone = document.querySelector('#tel');
+const phoneError = document.querySelector('.tel-error');
+phone.addEventListener('input',function(){
+    let phoneRegex = RegExp('^([0-9]{1,4}[ ][0-9]{10})$');
+    if(phoneRegex.test(phone.value)){
+        phoneError.textContent = "";
+    }else{
+        phoneError.textContent = "Phone number is incorrect";
+    }
+});
