@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Types</title>
-    <link rel="stylesheet" href="F:\Capg\HTML_CSS\css\simple_form.css">
+    <link rel="stylesheet" href="../css/simple_form.css">
 </head> 
 <body>
     <form>
@@ -14,26 +14,28 @@
             <input type="text" id="text" name="text">
             <error-output class="text-error" for="text"></error-output>
         </div>
-            <a> <label for="pwd'">password input type: </label>
-            <input type="password" id="pwd" name="pwd">
         <div>
-            <label for="email"> email input type: </label>
+            <label for="pwd'">password </label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+        <div>
+            <label for="email"> email address: </label>
             <input type="email" id="email" name="email">
         </div>
         <div>
-            <label for="url">url input type: </label>
+            <label for="url">url : </label>
             <input type="url" id="url" name="url">
         </div>
         <div>
-            <label for="number">number input type: </label>
+            <label for="number">mobile : </label>
             <input type="number" id="number" name="number">
         </div>
         <div>
-            <label for="tel">tel input type: </label>
+            <label for="tel">telephone : </label>
             <input type="tel" id="tel" name="tel">
         </div>
         <div>
-            <label for="search">search input type: </label>
+            <label for="search">search : </label>
             <input type="Search" id="Search" name="Search">
         </div>
         <div class="nativeDateTimePicker">
@@ -51,13 +53,6 @@
             <button>Submit</button>
         </div>
     </form>
-    <script>
-        const salary = document.querySelector('#salary');
-        const output = document.querySelector('.salary-output');
-        output.textContent = Salary.value;
-        Salary.addEventListener('input', function() {
-        output.textContent = Salary.value;
-        });
-    </script>
+<script src="../js/formSamples.js"></script>
 </body>
 </html>
